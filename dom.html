@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="dom.css">
+</head>
+<body>
+    <header>
+        <p class="name">coffee<span>.Tn</span> </p>
+        <div class="header">
+            <i class="fa-solid fa-user icon"></i>
+            <p>se connecter</p>
+            <div class="dropdown-container">
+            <div class="shoop">
+                <i onclick="show()"class="fa-solid fa-cart-shopping icon"></i>
+                <span id="add" class="panierr">0</span>
+            </div>
+            <div id="dropdown">
+
+            </div>
+        </div>
+            <p>Panier</p>
+        </div>
+    </header>
+    <section>
+        <div class="food">
+            <div class="column">
+            <div class="card">
+                <div class="heart">
+                <img src="ice latte.jpg" alt="">
+               <i onclick="heart()" id="heart" class="fa-solid fa-heart icon"></i>
+                <p>ce latte</p>
+                <p>8 DT</p>
+                <button data-name="chicken" class="but" onclick="add()" > <i class="fa-solid fa-basket-shopping"></i>add to cart</button>
+            </div>
+            </div>
+            <div class="card">
+                <div class="heart">
+                <img src="americano.jpg" alt="">
+                <i class="fa-solid fa-heart icon"></i>
+            </div>
+                <p>americano</p>
+                <p>15 DT</p>
+                <button class="but" onclick="add()"> <i class="fa-solid fa-basket-shopping"></i>add to cart</button>
+            </div>
+            <div class="card">
+                <div class="heart">
+                <img src="Cafe_Au_Lait.jpg" alt="">
+                <i class="fa-solid fa-heart icon"></i>
+            </div>
+                <p>Cafe_Au_Lait</p>
+                <p>50 DT</p>
+                <button class="but" onclick="add()"> <i class="fa-solid fa-basket-shopping"></i>add to cart</button>
+            </div>
+        </div>
+        <div class="column">
+            <div class="card">
+                <div class="heart">
+                <img src="Cafe_Mocha (1).jpg" alt="">
+                <i class="fa-solid fa-heart icon"></i>
+            </div>
+                <p> Cafe_Mocha</p>
+                <P>7 DT</P>
+                <button class="but" onclick="add()"> <i class="fa-solid fa-basket-shopping"></i>add to cart</button>
+            </div>
+       
+            <div class="card">
+                <div class="heart">
+                <img src="cappuccino_0.jpg" alt="">
+                <i class="fa-solid fa-heart icon"></i>
+            </div>
+                <p>cappuccino</p>
+                <P>65 DT</P>
+                <button class="but" onclick="add()"> <i class="fa-solid fa-basket-shopping"></i>add to cart</button>
+            </div>
+            <div class="card">
+                <div class="heart">
+                <img src="cold brew.jpg" alt="">
+                <i class="fa-solid fa-heart icon"></i>
+            </div>
+                <p>cold brew</p>
+                <P>60 DT</P>
+                <button class="but" onclick="add()"> <i class="fa-solid fa-basket-shopping"></i>add to cart</button>
+            </div>
+        </div>
+        <div class="column">
+            <div class="card">
+                <div class="heart">
+                <img src="doppio.jpg" alt="">
+                <i class="fa-solid fa-heart icon"></i>
+            </div>
+                <p>doppio</p>
+                <P>20 DT</P>
+                <button class="but" onclick="add()"> <i class="fa-solid fa-basket-shopping"></i>add to cart</button>
+            </div>
+            <div class="card">
+                <div class="heart">
+                <img src="espresso.jpg" alt="">
+                <i class="fa-solid fa-heart icon"></i>
+            </div>
+                <p>espresso</p>
+                <P>20 DT</P>
+                <button class="but" onclick="add()"> <i class="fa-solid fa-basket-shopping"></i>add to cart</button>
+            </div>
+        
+            <div class="card">
+                <div class="heart">
+                <img src="espresso_con_panna.jpg" alt="">
+                <i class="fa-solid fa-heart icon"></i>
+            </div>
+                <p>espresso_con_panna</p>
+                <P>50 DT</P>
+                <button class="but" onclick="add()"> <i class="fa-solid fa-basket-shopping"></i>add to cart</button>
+            </div>
+        </div>
+        <div class="column">
+            <div class="card">
+                <div class="heart">
+                <img src="Flat_White.jpg" alt="">
+                <i class="fa-solid fa-heart icon"></i>
+            </div>
+                <p>Flat_White</p>
+                <P>27 DT</P>
+                <button class="but" onclick="add()"> <i class="fa-solid fa-basket-shopping"></i>add to cart</button>
+            </div>
+            <div class="card">
+                <div class="heart">
+                <img src="Frappe.jpg" alt="">
+                <i class="fa-solid fa-heart icon"></i>
+            </div>
+                <p>Frappe</p>
+                <P>65 DT</P>
+                <button class="but" onclick="add()"> <i class="fa-solid fa-basket-shopping"></i>add to cart</button>
+            </div>
+            <div class="card">
+                <div class="heart">
+                <img src="freakshake.jpg" alt="">
+                <i class="fa-solid fa-heart icon"></i>
+            </div>
+                <p>freakshake</p>
+                <P>20 DT</P>
+                <button class="but" onclick="add()"> <i class="fa-solid fa-basket-shopping"></i>add to cart</button>
+            </div>
+        </div>
+        </div>
+    </section>
+    <script src="dom.js"></script>
+</body>
+</html>
